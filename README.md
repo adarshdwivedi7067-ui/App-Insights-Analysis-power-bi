@@ -1,62 +1,54 @@
-# App Insights Unlocked: Google Play Store Analytics
+# Power BI Sales Dashboard Analysis
 
-**Developed by:** Adarsh Dwivedi  
-**Role:** Data and Business Analyst  
+## Project Overview
 
-This repository contains a deep-dive **Power BI Analysis** of the Google Play Store ecosystem.  
-Using a dataset of **9,367+ apps**, this project identifies the factors that drive app success, user engagement, and revenue generation.
+This project focuses on analyzing sales data using **Power BI** to generate meaningful business insights. The dashboard provides a clear view of sales performance, customer behavior, and product trends to support data-driven decision making.
 
----
+## Dataset
 
-##  Technology Stack & Tools Used
-To build this project end-to-end, the following tools were used:
+The dataset contains sales transaction data including:
 
-- **Microsoft Power BI Desktop:** Interactive dashboards and data visualization.  
-- **Power Query (M Language):** Data cleaning, transformation, and handling missing values.  
-- **DAX (Data Analysis Expressions):** Custom measures and complex calculations.  
-- **Microsoft Excel / CSV:** Raw dataset handling and initial data audit.  
-- **Looker Studio:** Supplementary charts and high-level summary reporting.  
+* Order ID
+* Product Category
+* Sales Amount
+* Customer Information
+* Order Date
+* Region
 
----
+The data was cleaned and prepared before building the dashboard.
 
-## Technical Workflow
-- **Data Extraction:** Raw dataset fetched from Kaggle (Google Play Store Apps).  
-- **Data Transformation (Power Query):**  
-  - Removed null values from Rating column.  
-  - Standardized App Size into MB/KB units.  
-  - Dropped redundant columns to improve model speed.  
-- **Data Modeling:** Built relationships between Categories and Ratings.  
-- **Visualization:** Used bar charts, pie charts, and treemaps to show distribution and insights.  
+## Tools Used
 
----
+* **Power BI** – Data visualization and dashboard creation
+* **Excel / CSV** – Data source and preprocessing
 
-##  Key Dashboard Insights
-- **Category Dominance:** Family category has the highest number of apps, but **Games and Communication** categories lead in total reach (**167.6 Billion installs**).  
-- **Monetization Strategy:** 92.6% of apps are free, highlighting the dominance of ad-revenue and freemium models.  
-- **Quality Benchmark:** Average market rating is **4.19**. Apps below 4.0 show a significant drop in installs.  
-- **Top Performance:** Leaders like **Subway Surfers, 8 Ball Pool, and ESPN** identified through comparative benchmarking.  
+## Dashboard Features
 
----
+The Power BI dashboard includes:
 
-##  Key DAX Measures Developed
-- **Average App Rating:** `AVERAGE('Apps'[Rating])`  
-- **Total Market Installs:** `SUM('Apps'[Installs])`  
-- **Review-to-Install Ratio:** Custom logic to measure user engagement levels.  
+* Total Sales KPI
+* Total Orders
+* Sales by Category
+* Sales by Region
+* Monthly Sales Trend
+* Top Performing Products
 
----
+These visualizations help understand sales performance and identify growth opportunities.
 
-##  Strategic Recommendations
-- **Focus on Engagement:** Developers should target high-install categories (Social, Productivity).  
-- **Performance Maintenance:** Maintain ratings above **4.2** for organic growth.  
-- **Monetization:** Free-to-play model with in-app purchases is the most successful strategy.  
+## Key Insights
 
----
+* Certain product categories generate the highest revenue.
+* Sales performance varies across different regions.
+* Seasonal trends influence monthly sales performance.
+* A small number of products contribute significantly to total sales.
 
-##  Project Structure
-- `project_power_bi.pbix` → Interactive Power BI dashboard.  
-- `EDA01 - App Insights Analysis.docx` → Project documentation and problem statement.  
+## Business Recommendations
 
----
+* Focus marketing efforts on top-performing products.
+* Improve promotion strategies in low-performing regions.
+* Monitor seasonal trends to plan inventory and campaigns.
 
-##  Data Source
-Google Play Store Dataset (Kaggle) analyzed using **Power BI**.  
+
+## Conclusion
+
+This project demonstrates how Power BI can transform raw sales data into interactive dashboards and actionable insights that help businesses make better decisions.
